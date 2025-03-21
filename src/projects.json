@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "TripSimple",
+      "description": "Made in collaboration with a classmate, 2-week specialisation project: Trip itinerary generator suggesting activities and sights based on destination and duration of the trip. Also allowing users to track countries visited and create bucket lists of countries to visit. Made in React using Firebase as data storage.",
+      "image": "TripSimple.png",
+      "linkToGithub": "https://github.com/MaciejRutkowski27/Specialisation-project"
+    },
+    {
+      "title": "CheersMate",
+      "description": "Group work based, 3-week project: Designing and coding an app featuring different party games with their descriptions and rules. Additional feature was a spinning wheel suggesting users what game to play. Made with React using Firebase as data storage.",
+      "image": "CheersMate.png",
+      "linkToGithub": "https://github.com/MaciejRutkowski27/cheersmate-app"
+    },
+    {
+      "title": "MaxiZoo",
+      "description": "Solo project, 2-week project: creating an app solution for MaxiZoo customers, specifically their loyalty program users. The goal was to create a single app allowing users to shop online, get discounts by playing games and helping animals in need. Made in Figma.",
+      "image": "MaxiZoo.png",
+      "linkToFigma": "https://www.figma.com/proto/i2ge6SKptY2862Bgy6dUn9/Untitled?node-id=1-3068&t=Tl7FlQsWAfLOhd88-1"
+    }
+  ]
+}
