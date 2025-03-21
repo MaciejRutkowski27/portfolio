@@ -7,7 +7,7 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects">
+      <section id="projects" style={{marginLeft: "5vw", marginRight: "5vw"}}>
         <div className="project-list-container">
           <h1 className="heading2">My Projects</h1>
           <div className="project-list">

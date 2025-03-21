@@ -1,4 +1,4 @@
-import Button from "./button";
+import Buttonblank from "./buttonblank";
 export default function ProjectCard({project}) {
     return (
       <div className="project-card">
@@ -12,10 +12,10 @@ export default function ProjectCard({project}) {
           <p className="project-description">{project.description}</p>
           <div className="project-links">
             {project.linkToGithub && (
-              <Button text="GitHub" to={project.linkToGithub}/>
+              <Buttonblank text="GitHub" to={project.linkToGithub}/>
             )}
             {project.linkToFigma && (
-              <Button text="Figma" to={project.linkToFigma}/>
+              <Buttonblank text="Figma" to={project.linkToFigma}/>
             )}
           </div>
         </div>

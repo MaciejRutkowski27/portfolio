@@ -7,8 +7,7 @@ import Contact from "./Contact";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutme" element={<Aboutme />} />

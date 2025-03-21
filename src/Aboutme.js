@@ -1,4 +1,4 @@
-
+import myimage from "./myimage.jpeg"
 export default function Aboutme() {
 
 return (
@@ -6,7 +6,7 @@ return (
     <div className="aboutme" id="aboutme">
       <div className="about-container">
         <div className="picandtext">
-          <img src="/IMG_9146.jpeg" alt="me" />
+          <img src={myimage} alt="me" />
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h1 className="heading1">Hej, I'm Maciej.</h1>
             <p className="aboutme-text">
@@ -19,30 +19,30 @@ return (
               here's my portfolio. While ideally I'd like to focus on frontend
               development, I don't mind doing some more design oriented work
               either.
-              <br></br>
-              <p className="aboutme-textbold">
-                I'm currently looking for an{" "}
-                <mark
-                  style={{
-                    color: "#ed2ea5",
-                    width: "fit-content",
-                    background: "none",
-                  }}
-                >
-                  internship{" "}
-                </mark>{" "}
-                starting in
-                <mark
-                  style={{
-                    color: "#ed2ea5",
-                    width: "fit-content",
-                    background: "none",
-                  }}
-                >
-                  {" "}
-                  August 2025.
-                </mark>
-              </p>
+            </p>
+            <br></br>
+            <p className="aboutme-textbold">
+              I'm currently looking for an{" "}
+              <mark
+                style={{
+                  color: "#ed2ea5",
+                  width: "fit-content",
+                  background: "none",
+                }}
+              >
+                internship{" "}
+              </mark>{" "}
+              starting in
+              <mark
+                style={{
+                  color: "#ed2ea5",
+                  width: "fit-content",
+                  background: "none",
+                }}
+              >
+                {" "}
+                August 2025.
+              </mark>
             </p>
           </div>
         </div>

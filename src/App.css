@@ -12,34 +12,6 @@
   color: white;
   cursor: url("../public/lightsaber.svg") 30 30, auto;
 }
-
-.testinghover {
-  width: 300px;
-  height: 300px;
-  background-color: greenyellow;
-  margin-bottom: 20px;
-}
-.testinghover:hover {
-  cursor: url("../public/lightsaberblue.svg") 30 30, auto;
-}
-.testinghover2 {
-  width: 300px;
-  height: 300px;
-  background-color: greenyellow;
-  margin-bottom: 20px;
-}
-.testinghover2:hover {
-  cursor: url("../public/lightsaberred.svg") 30 30, auto;
-}
-.testinghover3 {
-  width: 300px;
-  height: 300px;
-  background-color: greenyellow;
-  margin-bottom: 20px;
-}
-.testinghover3:hover {
-  cursor: url("../public/lightsaberpurple.svg") 30 30, auto;
-}
 .earth {
   background: url("../public/world.svg");
   background-size: cover;
@@ -156,6 +128,20 @@ span {
   color: white;
   font-size: 16px;
   cursor: url("../public/lightsaberpurple.svg") 30 30, auto;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  overflow: hidden; /* Prevents text from escaping */
+}
+.btn2 {
+  position: relative; /* Makes button a reference for absolute positioning */
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: url("../public/lightsaberblue.svg") 30 30, auto;
   height: fit-content;
   width: fit-content;
   text-align: center;
@@ -354,10 +340,12 @@ span {
   width: 30vw;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  @media only screen and (max-width: 1200px) {
-    width: 80%;
-  }
 }
+@media only screen and (max-width: 1200px) {
+  .aboutme-text {
+    width: 100%;
+  }
+  }
 .aboutme-textbold {
   font-size: 20px;
   line-height: 2;
@@ -374,10 +362,21 @@ span {
   width: 30%;
 }
 
-.container {
+.contact-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 5vh;
+  @media only screen and (max-width:800px) {
+    flex-direction: column;
+  }
+}
+.contact-buttons {
+  display: flex;
+  @media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 .circle {
   width: 25vw;
@@ -389,6 +388,11 @@ span {
   background-color: transparent;
   box-shadow: 0 0 8px #ed2ea5, inset 0 0 8px #ed2ea5;
   animation: pulse 3s linear 1s infinite;
+  @media only screen and (max-width: 800px) {
+    width: 50vw;
+    height: 50vw;
+    margin-top: 5vh;
+  }
 }
 @keyframes pulse {
   0% {
@@ -450,17 +454,91 @@ span {
   }
 }
 
+.footer {
+  width: 100%;
+  height: fit-content;
+  background-color: #000000;
+  position: relative;
+  text-align: left;
+  z-index: 1000;
+  margin-top: auto;
+}
+.footer-text {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+ margin-bottom: 0;
+ padding-bottom: 20px;
+ padding-left: 20px;
+}
 .navigation {
   width: fit-content;
   height: fit-content;
+  display: flex;
+  gap: 1rem;
 }
-nav {
-  margin-top: 3vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
+.nav {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center; /* Ensures vertical alignment */
+  position: relative;
+}
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+
+/* Burger menu icon */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Show burger menu on smaller screens */
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+}
+
+/* Mobile menu popup */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Ensure buttons inside the mobile menu are centered */
+.mobile-menu button {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Add some padding when the menu is open */
+body.menu-open {
+  overflow: hidden;
 }
 .projects-container {
   display: flex;
@@ -482,6 +560,10 @@ nav {
   height: fit-content;
   max-width: 500px;
   text-align: center;
+  @media only screen and (max-width: 600px) {
+    max-width: 300px;
+    
+  }
 }
 
 .project-card:hover {
@@ -494,6 +576,12 @@ nav {
   width: auto;
   height: 35vh;
   object-fit: fill;
+  @media only screen and (max-width: 600px) {
+    height: 25vh;
+  }
+  @media only screen and (min-width: 2400px) {
+    height: 25vh;
+  }
 }
 
 .project-content {
@@ -515,6 +603,9 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   margin: 10px 0;
+  @media only screen and (max-width: 600px) {
+    height: auto;
+  }
 }
 
 .project-links {
@@ -551,6 +642,10 @@ img {
   width: auto;
   position: relative;
   z-index: 1000 !important;
+  @media only screen and (max-width: 500px) {
+    height: 20rem;
+    width: 75%;
+  }
 }
 
 .picandtext {
@@ -559,6 +654,8 @@ img {
   gap: 3rem;
   @media only screen and (max-width: 1200px ) {
     flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
   }
 }
 
@@ -566,6 +663,8 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
   @media only screen and (max-width: 1400px) {
 flex-direction: column;
 gap: 3rem;

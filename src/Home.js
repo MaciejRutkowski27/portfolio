@@ -1,8 +1,9 @@
 import "./App.css";
 import Menu from "./components/menu";
-import Socials from "./components/socials";
 import Aboutme from "./Aboutme";
 import Projects from "./Projects";
+import Contact from "./Contact";
+import Footer from "./components/footer";
 
 function Home() {
   return (
@@ -17,7 +18,8 @@ function Home() {
             <Menu />
             <Aboutme />
             <Projects/>
-            <Socials />
+            <Contact />
+            <Footer/>
           </div>
         </span>
       </div>
