@@ -2,7 +2,7 @@ export default function Button({ text, to }) {
   return (
     <>
       <div className="svg-container">
-        <a href={to}>
+        <a className="menulink" href={to}>
           <button className="btn">
             <span className="btnspan">{text}</span>
             <svg width="120" height="60" viewBox="0 0 150 80">

@@ -1,8 +1,8 @@
 export default function Buttonblank({ text, to }) {
   return (
     <>
-      <div className="svg-container">
-        <a href={to} target="_blank" rel="noopener noreferrer">
+      <div className="svg-container2">
+        <a className="projectlink" href={to} target="_blank" rel="noopener noreferrer">
           <button className="btn2">
             <span className="btnspan">{text}</span>
             <svg width="120" height="60" viewBox="0 0 150 80">
