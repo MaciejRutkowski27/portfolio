@@ -22,7 +22,7 @@ return (
             </p>
             <br></br>
             <p className="aboutme-textbold">
-              I'm currently looking for an{" "}
+              I'm currently looking for a{" "}
               <mark
                 style={{
                   color: "#ed2ea5",
@@ -30,19 +30,10 @@ return (
                   background: "none",
                 }}
               >
-                internship{" "}
+                position in Frontend Development.{" "}
               </mark>{" "}
-              starting in
-              <mark
-                style={{
-                  color: "#ed2ea5",
-                  width: "fit-content",
-                  background: "none",
-                }}
-              >
-                {" "}
-                August 2025.
-              </mark>
+              
+              
             </p>
           </div>
         </div>
